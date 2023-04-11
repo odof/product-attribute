@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-11 15:10+0000\n"
-"PO-Revision-Date: 2023-04-11 15:10+0000\n"
+"POT-Creation-Date: 2023-04-11 14:01+0000\n"
+"PO-Revision-Date: 2023-04-11 14:01+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -23,12 +23,12 @@ msgstr ""
 #. module: product_multi_image
 #: model_terms:ir.ui.view,arch_db:product_multi_image.image_form_view
 msgid "(keep empty for being visible for all variants)"
-msgstr ""
+msgstr "(laisser vide pour rendre visible dans toutes les variantes)"
 
 #. module: product_multi_image
 #: model_terms:ir.ui.view,arch_db:product_multi_image.image_kanban_view
 msgid "<i>Visible in all variants</i>"
-msgstr ""
+msgstr "<i>Visible dans toutes les variantes</i>"
 
 #. module: product_multi_image
 #: model:ir.model.fields,help:product_multi_image.field_base_multi_image_image__product_variant_ids
@@ -37,6 +37,9 @@ msgid ""
 "several of the available variants, you restrict the availability of the "
 "image to those variants."
 msgstr ""
+"Si vous le laissez vide, toutes les variantes afficheront cette image. "
+"Sélectionnez une ou plusieurs variantes pour restreindre l'affichade de "
+"l'image à ces variantes."
 
 #. module: product_multi_image
 #: model:ir.model.fields,field_description:product_multi_image.field_product_product__image_ids
@@ -53,29 +56,29 @@ msgstr ""
 #. module: product_multi_image
 #: model:ir.model,name:product_multi_image.model_product_template
 msgid "Product"
-msgstr ""
+msgstr "Produit"
 
 #. module: product_multi_image
 #: model:ir.model,name:product_multi_image.model_product_product
 msgid "Product Variant"
-msgstr ""
+msgstr "Variante de produit"
 
 #. module: product_multi_image
 #: model:ir.model.fields,field_description:product_multi_image.field_base_multi_image_image__product_variant_count
 msgid "Product Variant Count"
-msgstr ""
+msgstr "Nombre de variantes de produits"
 
 #. module: product_multi_image
 #: model_terms:ir.ui.view,arch_db:product_multi_image.image_kanban_view
 msgid "Visible in"
-msgstr ""
+msgstr "Visible sur"
 
 #. module: product_multi_image
 #: model:ir.model.fields,field_description:product_multi_image.field_base_multi_image_image__product_variant_ids
 msgid "Visible in these variants"
-msgstr ""
+msgstr "Visible sur ces variantes"
 
 #. module: product_multi_image
 #: model_terms:ir.ui.view,arch_db:product_multi_image.image_kanban_view
 msgid "variant(s)"
-msgstr ""
+msgstr "variante(s)"
