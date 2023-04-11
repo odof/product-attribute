@@ -9,14 +9,14 @@
         <field name="inherit_id" ref="base_multi_image.image_form_view" />
         <field name="mode">primary</field>
         <field name="arch" type="xml">
-            <field name="file_db_store" position="after">
+            <xpath expr="//group[@name='option']" position="inside">
                 <field
                     name="product_variant_ids"
                     widget="many2many_tags"
                     domain="[('product_tmpl_id', '=', owner_id)]"
                     placeholder="(keep empty for being visible for all variants)"
                 />
-            </field>
+            </xpath>
         </field>
     </record>
 
@@ -26,11 +26,11 @@
         <field name="inherit_id" ref="base_multi_image.image_kanban_view" />
         <field name="mode">primary</field>
         <field name="arch" type="xml">
-            <xpath expr="/kanban/field[@name='storage']" position="after">
+            <xpath expr="/kanban/field[@name='sequence']" position="after">
                 <field name="product_variant_ids" />
                 <field name="product_variant_count" />
             </xpath>
-            <xpath expr="//field[@name='storage']/../.." position="after">
+            <xpath expr="//table[@name='main_table']" position="inside">
                 <tr>
                     <td>
                         <span t-if="record.product_variant_count.value == 0">
